@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+  <title>Totally Professional Website</title>
+  <!-- intentionally missing viewport; students must add -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* extra inline styles to extract */
+    .loud { letter-spacing: 6px; color:#0ff; text-shadow:2px 2px 0 #f0f; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV (equal messiness) ===== -->
+  <div id="top" style="border-bottom:8px groove #aaa; padding: 6px 8px;">
+    <table width="100%" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><h1 class="loud">MY SUPER SITE</h1></td>
+        <td align="right">
+          <!-- non-semantic nav -->
+          <span><a href="#about">About</a></span> || 
+          <span><a href="#gallery">Gallery</a></span> || 
+          <span><a href="#contact">Contact</a></span>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ===== ABOUT (equal messiness) ===== -->
+  <div id="about" style="width: 980px; margin: 18px auto; border: 6px double #c00; padding: 10px;">
+    <h2>About This Site</h2>
+    <div class="about-wrap">
+      <!-- mixed floats + fixed px + inline styles -->
+      <div class="about-left" style="float:left; width: 520px; padding: 8px; border: 4px dashed #333;">
+        <h3>Who We Are</h3>
+        <p>We build web things with <b>passion</b> and <i>energy</i>. This paragraph is intentionally long and ignores readability so it wraps in weird ways and the container is a fixed width which will overflow on small screens and cause horizontal scrolling for fun and learning.</p>
+        <ul>
+          <li>HTML (sort of)</li>
+          <li>CSS (could be better)</li>
+          <li>Images (placeholders)</li>
+        </ul>
+      </div>
+      <div class="about-right" style="float:left; width: 380px; margin-left: 18px; padding: 8px; border: 6px ridge #666; height: 240px;">
+        <h3>Fun Facts</h3>
+        <p>Sometimes we <u>underline</u> things. Sometimes we use <font color="red">font tags</font> for no reason.</p>
+        <p class="tiny-note">Tiny text everywhere tiny tiny tiny tiny tiny tiny.</p>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+  </div>
+
+  <!-- ===== GALLERY (equal messiness) ===== -->
+  <div id="gallery" style="background:#f4f4f4; padding: 24px 0;">
+    <div class="gallery-inner" style="width: 980px; margin: 0 auto;">
+      <h2>Gallery of Boxes</h2>
+      <!-- mixed-size boxes, floats, random offsets -->
+      <div class="g-box big">Box 1</div>
+      <div class="g-box wide">Box 2</div>
+      <div class="g-box tall">Box 3</div>
+      <div class="g-box">Box 4</div>
+      <div class="g-box tiny">Box 5</div>
+      <div class="g-box crooked" style="position:relative; top:-12px; left: 10px;">Box 6</div>
+      <div class="g-box">Box 7</div>
+      <div class="g-box">Box 8</div>
+      <div class="g-box wide">Box 9</div>
+      <div style="clear:both"></div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT (equal messiness, NO checks, NO JS) ===== -->
+  <div id="contact" style="width: 980px; margin: 22px auto; border: 5px dotted #000; padding: 14px;">
+    <h2>Contact Us</h2>
+    <!-- single long column, mismatched widths; no required/min/pattern; keep types but no validation -->
+    <form>
+      <div class="rowish"><label>Name</label><br>
+        <input type="text" placeholder="your name" style="width: 430px;">
+      </div>
+      <div class="rowish"><label>Email</label><br>
+        <input type="email" placeholder="name@example.com" style="width: 260px;">
+      </div>
+      <div class="rowish"><label>Phone</label><br>
+        <input type="tel" style="width: 180px;">
+      </div>
+      <div class="rowish"><label>Age</label><br>
+        <input type="number" style="width: 90px;">
+      </div>
+      <div class="rowish"><label>Website</label><br>
+        <input type="url" style="width: 520px;">
+      </div>
+      <div class="rowish"><label>Topic</label><br>
+        <select style="width: 380px;">
+          <option>Choose ...</option>
+          <option>Support</option>
+          <option>Feedback</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="rowish"><label>Message</label><br>
+        <textarea rows="2" cols="80" style="height: 60px; width: 700px"></textarea>
+      </div>
+      <div class="rowish"><label>Agree</label><br>
+        <input type="checkbox"> I agree to everything forever
+      </div>
+      <div style="position:relative; height: 80px;">
+        <button type="submit" class="btnHuge" style="position:absolute; right:-12px; bottom:-18px;">SEND!!!</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- ===== FOOTER (equal messiness) ===== -->
+  <div id="footer" style="background:#111; color:#ddd; padding: 30px;">
+    <table width="100%" cellspacing="12">
+      <tr>
+        <td>© 2014 — 2021 Super Company Worldwide LTD INC</td>
+        <td align="right">
+          <span>Back to <a href="#top">Top</a></span>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- no JS file on purpose -->
+</body>
+</html>
