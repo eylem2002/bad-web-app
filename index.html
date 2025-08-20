@@ -1,25 +1,34 @@
 <!doctype html>
 <html>
+
 <head>
+  <!-- test test -->
   <title>Totally Professional Website</title>
   <!-- intentionally missing viewport; students must add -->
   <link rel="stylesheet" href="styles.css">
   <style>
     /* extra inline styles to extract */
-    .loud { letter-spacing: 6px; color:#0ff; text-shadow:2px 2px 0 #f0f; }
+    .loud {
+      letter-spacing: 6px;
+      color: #0ff;
+      text-shadow: 2px 2px 0 #f0f;
+    }
   </style>
 </head>
+
 <body>
 
   <!-- ===== HEADER / NAV (equal messiness) ===== -->
   <div id="top" style="border-bottom:8px groove #aaa; padding: 6px 8px;">
     <table width="100%" cellspacing="0" cellpadding="0">
       <tr>
-        <td><h1 class="loud">MY SUPER SITE</h1></td>
+        <td>
+          <h1 class="loud">MY SUPER SITE</h1>
+        </td>
         <td align="right">
           <!-- non-semantic nav -->
-          <span><a href="#about">About</a></span> || 
-          <span><a href="#gallery">Gallery</a></span> || 
+          <span><a href="#about">About</a></span> ||
+          <span><a href="#gallery">Gallery</a></span> ||
           <span><a href="#contact">Contact</a></span>
         </td>
       </tr>
@@ -33,14 +42,17 @@
       <!-- mixed floats + fixed px + inline styles -->
       <div class="about-left" style="float:left; width: 520px; padding: 8px; border: 4px dashed #333;">
         <h3>Who We Are</h3>
-        <p>We build web things with <b>passion</b> and <i>energy</i>. This paragraph is intentionally long and ignores readability so it wraps in weird ways and the container is a fixed width which will overflow on small screens and cause horizontal scrolling for fun and learning.</p>
+        <p>We build web things with <b>passion</b> and <i>energy</i>. This paragraph is intentionally long and ignores
+          readability so it wraps in weird ways and the container is a fixed width which will overflow on small screens
+          and cause horizontal scrolling for fun and learning.</p>
         <ul>
           <li>HTML (sort of)</li>
           <li>CSS (could be better)</li>
           <li>Images (placeholders)</li>
         </ul>
       </div>
-      <div class="about-right" style="float:left; width: 380px; margin-left: 18px; padding: 8px; border: 6px ridge #666; height: 240px;">
+      <div class="about-right"
+        style="float:left; width: 380px; margin-left: 18px; padding: 8px; border: 6px ridge #666; height: 240px;">
         <h3>Fun Facts</h3>
         <p>Sometimes we <u>underline</u> things. Sometimes we use <font color="red">font tags</font> for no reason.</p>
         <p class="tiny-note">Tiny text everywhere tiny tiny tiny tiny tiny tiny.</p>
@@ -121,4 +133,5 @@
 
   <!-- no JS file on purpose -->
 </body>
+
 </html>
