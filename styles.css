@@ -1,52 +1,107 @@
 /* BAD, BALANCED CSS — each section equally messy; no JS checks */
 /* contradictory resets */
-* { box-sizing: content-box; }
-* { box-sizing: border-box !important; }
+/* test test */
+* {
+  box-sizing: content-box;
+}
+* {
+  box-sizing: border-box !important;
+}
 
-html, body { margin:0; padding:0; }
-body { font-family: "Comic Sans MS", "Papyrus", cursive; line-height:1.1; color:#111; }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Comic Sans MS", "Papyrus", cursive;
+  line-height: 1.1;
+  color: #111;
+}
 
 /* headings loud and skewed */
-h1, h2, h3 { text-transform: uppercase; letter-spacing: 2px; transform: skew(-1.8deg); }
-a { color: blue !important; }
-a:hover { background: yellow; transition: all .05s; }
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transform: skew(-1.8deg);
+}
+a {
+  color: blue !important;
+}
+a:hover {
+  background: yellow;
+  transition: all 0.05s;
+}
 
 /* ABOUT */
-.about-wrap .about-left, .about-wrap .about-right { background:#fff; }
-.tiny-note { font-size: 10px; }
+.about-wrap .about-left,
+.about-wrap .about-right {
+  background: #fff;
+}
+.tiny-note {
+  font-size: 10px;
+}
 
 /* GALLERY floats + fixed sizes */
 .g-box {
-  float:left;
+  float: left;
   width: 200px;
   height: 160px;
   margin: 18px;
   border: 6px dashed #444;
-  display:flex; align-items:center; justify-content:center;
-  background:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
   box-shadow: 8px 8px 0 #ccc;
 }
-.g-box.big   { width: 260px; height: 200px; }
-.g-box.wide  { width: 320px; height: 120px; }
-.g-box.tall  { width: 180px; height: 260px; }
-.g-box.tiny  { width: 100px; height: 100px; }
-.g-box.crooked { transform: rotate(2.2deg); }
+.g-box.big {
+  width: 260px;
+  height: 200px;
+}
+.g-box.wide {
+  width: 320px;
+  height: 120px;
+}
+.g-box.tall {
+  width: 180px;
+  height: 260px;
+}
+.g-box.tiny {
+  width: 100px;
+  height: 100px;
+}
+.g-box.crooked {
+  transform: rotate(2.2deg);
+}
 
 /* CONTACT single column with awkward spacing */
-#contact .rowish { margin: 20px 0 24px; }
-#contact label { font-weight: bold; display:inline-block; width:auto; }
-#contact input, #contact textarea, #contact select {
+#contact .rowish {
+  margin: 20px 0 24px;
+}
+#contact label {
+  font-weight: bold;
+  display: inline-block;
+  width: auto;
+}
+#contact input,
+#contact textarea,
+#contact select {
   border: 4px solid #333;
   padding: 8px 10px;
   outline: none;
   background: #fafafa;
-  transition: box-shadow .05s, border-color .05s;
+  transition: box-shadow 0.05s, border-color 0.05s;
 }
-#contact input:focus, #contact textarea:focus, #contact select:focus {
+#contact input:focus,
+#contact textarea:focus,
+#contact select:focus {
   border-color: #ff6600;
-  box-shadow: 0 0 0 6px rgba(255,102,0,.25);
+  box-shadow: 0 0 0 6px rgba(255, 102, 0, 0.25);
 }
-.btnHuge { 
+.btnHuge {
   font-size: 24px;
   padding: 16px 28px;
   background: linear-gradient(0deg, #ffff00, #ffcc00);
@@ -54,9 +109,15 @@ a:hover { background: yellow; transition: all .05s; }
   cursor: pointer;
   transform: rotate(-1.5deg);
 }
-.btnHuge:hover { transform: rotate(0) scale(1.08); transition: all .1s; }
+.btnHuge:hover {
+  transform: rotate(0) scale(1.08);
+  transition: all 0.1s;
+}
 
 /* pretend responsive */
 @media (max-width: 600px) {
-  #about, #contact { width: 560px; }
+  #about,
+  #contact {
+    width: 560px;
+  }
 }
